@@ -2,5 +2,5 @@
 RealmSwift のサンプルアプリ
 
 # ライブラリ
-Realm
-RealmSwift
+* Realm
+* RealmSwift

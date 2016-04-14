@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2538A5BEE87236AFD0F32EB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 683DDBA3399391F9802CC223 /* Pods.framework */; };
 		E2256B161CBF193300A6E786 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2256B151CBF193300A6E786 /* AppDelegate.swift */; };
 		E2256B181CBF193300A6E786 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2256B171CBF193300A6E786 /* ViewController.swift */; };
 		E2256B1B1CBF193300A6E786 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2256B191CBF193300A6E786 /* Main.storyboard */; };
 		E2256B1D1CBF193300A6E786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2256B1C1CBF193300A6E786 /* Assets.xcassets */; };
 		E2256B201CBF193300A6E786 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2256B1E1CBF193300A6E786 /* LaunchScreen.storyboard */; };
+		E2256B281CBF198A00A6E786 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2256B271CBF198A00A6E786 /* TableViewController.swift */; };
+		E2256B2A1CBF199200A6E786 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2256B291CBF199200A6E786 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DCCE841A55A0CDEB8639074 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		683DDBA3399391F9802CC223 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7D6DB36646D38A929F979DF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E2256B121CBF193300A6E786 /* RealmSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2256B151CBF193300A6E786 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2256B171CBF193300A6E786 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		E2256B1C1CBF193300A6E786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2256B1F1CBF193300A6E786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2256B211CBF193300A6E786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2256B271CBF198A00A6E786 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E2256B291CBF199200A6E786 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2538A5BEE87236AFD0F32EB /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01362366F793052B7989A931 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				683DDBA3399391F9802CC223 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D1859D86148B77B87171049 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DCCE841A55A0CDEB8639074 /* Pods.debug.xcconfig */,
+				B7D6DB36646D38A929F979DF /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E2256B091CBF193300A6E786 = {
 			isa = PBXGroup;
 			children = (
 				E2256B141CBF193300A6E786 /* RealmSwiftSample */,
 				E2256B131CBF193300A6E786 /* Products */,
+				0D1859D86148B77B87171049 /* Pods */,
+				01362366F793052B7989A931 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +84,8 @@
 			children = (
 				E2256B151CBF193300A6E786 /* AppDelegate.swift */,
 				E2256B171CBF193300A6E786 /* ViewController.swift */,
+				E2256B291CBF199200A6E786 /* User.swift */,
+				E2256B271CBF198A00A6E786 /* TableViewController.swift */,
 				E2256B191CBF193300A6E786 /* Main.storyboard */,
 				E2256B1C1CBF193300A6E786 /* Assets.xcassets */,
 				E2256B1E1CBF193300A6E786 /* LaunchScreen.storyboard */,
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2256B241CBF193300A6E786 /* Build configuration list for PBXNativeTarget "RealmSwiftSample" */;
 			buildPhases = (
+				7E01906E97551B6163E3557F /* Check Pods Manifest.lock */,
 				E2256B0E1CBF193300A6E786 /* Sources */,
 				E2256B0F1CBF193300A6E786 /* Frameworks */,
 				E2256B101CBF193300A6E786 /* Resources */,
+				E4FABA696DDB6851949BE715 /* Embed Pods Frameworks */,
+				8652C86FBF8715C116BFFB50 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,12 +163,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7E01906E97551B6163E3557F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8652C86FBF8715C116BFFB50 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4FABA696DDB6851949BE715 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E2256B0E1CBF193300A6E786 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2256B2A1CBF199200A6E786 /* User.swift in Sources */,
 				E2256B181CBF193300A6E786 /* ViewController.swift in Sources */,
+				E2256B281CBF198A00A6E786 /* TableViewController.swift in Sources */,
 				E2256B161CBF193300A6E786 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +328,7 @@
 		};
 		E2256B251CBF193300A6E786 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DCCE841A55A0CDEB8639074 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RealmSwiftSample/Info.plist;
@@ -256,6 +340,7 @@
 		};
 		E2256B261CBF193300A6E786 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7D6DB36646D38A929F979DF /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RealmSwiftSample/Info.plist;
@@ -284,6 +369,7 @@
 				E2256B261CBF193300A6E786 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
